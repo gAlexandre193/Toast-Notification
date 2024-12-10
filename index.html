@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d1caeaa7f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="toastActionButtonList">
+    <button 
+      type="button" 
+      class="btnCallToast"
+      onclick="handleCallToast({ toastType: 'success', toastMsg: 'Success Message' })"
+    > 
+      Success 
+    </button>
+
+    <button 
+      type="button" 
+      class="btnCallToast"
+      onclick="handleCallToast({ toastType: 'info', toastMsg: 'Info Message' })"
+    > 
+      Info 
+    </button>
+
+    <button 
+      type="button" 
+      class="btnCallToast"
+      onclick="handleCallToast({ toastType: 'warning', toastMsg: 'Warning Message' })"
+    > 
+      Warning 
+    </button>
+
+    <button 
+      type="button" 
+      class="btnCallToast"
+      onclick="handleCallToast({ toastType: 'danger', toastMsg: 'Danger Message' })"
+    > 
+      Danger 
+    </button>
+  </div>
+  
+  <ul id="cardListToast" class="cardListToast"></ul>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
